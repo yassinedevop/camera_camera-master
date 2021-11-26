@@ -86,11 +86,15 @@ class _CameraCameraState extends State<CameraCamera> {
         initialData: CameraStatusEmpty(),
         builder: (_, snapshot) => snapshot.data!.when(
             preview: (controller) => Stack(
+                  fit: StackFit.passthrough,
                   children: [
-                    CameraCameraPreviewWidg(
-                      widget: widget,
-                      controller: controller,
-                    ),
+                    Container(
+                        width: double.infinity,
+                        height: double.infinity,
+                        child: CameraCameraPreviewWidg(
+                          widget: widget,
+                          controller: controller,
+                        )),
                     if (bloc.status.preview.cameras.length > 1)
                       FlipCamera(bloc: bloc)
                   ],
@@ -106,7 +110,6 @@ class _CameraCameraState extends State<CameraCamera> {
     );
   }
 }
-
 
 class CameraCameraPreviewWidg extends StatelessWidget {
   final CameraCameraController controller;

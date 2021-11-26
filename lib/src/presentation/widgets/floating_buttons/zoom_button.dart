@@ -16,23 +16,23 @@ class ZoomButton extends StatelessWidget {
       alignment: Alignment.bottomCenter,
       child: Padding(
         padding: const EdgeInsets.only(bottom: 10.0),
-        child: Container(
-          height: 40,
-          width: 40,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            color: Colors.black.withOpacity(0.6),
-          ),
-          child: IconButton(
-            icon: Center(
-              child: Text(
-                "${zoomLevel.toStringAsFixed(1)}x",
-                style: TextStyle(color: Colors.white, fontSize: 12),
-              ),
+        child: InkWell(
+          onTap: () {
+            controller.zoomChange();
+          },
+          child: Container(
+            height: 40,
+            width: 40,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: Colors.black.withOpacity(0.6),
             ),
-            onPressed: () {
-              controller.zoomChange();
-            },
+            child: Text(
+              "${zoomLevel.toStringAsFixed(1)}x",
+              style: TextStyle(color: Colors.white, fontSize: 12),
+              textAlign: TextAlign.center,
+            ),
           ),
         ),
       ),
