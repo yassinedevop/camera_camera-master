@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:camera_camera/src/core/camera_bloc.dart';
+import 'package:camera_camera_2/src/core/camera_bloc.dart';
 import 'package:flutter/material.dart';
 
 class FlipCamera extends StatelessWidget {

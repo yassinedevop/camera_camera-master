@@ -1,6 +1,8 @@
 # Camera_Camera 2.0
 
-## New Features!
+## important
+this is a new version of camera_camera package, I fixed in this version most of the camera bugs such as when the camera crash after changing device orientation and the crash when you take a screenshot and I reshaped the code to be more clean and easy to edit, feel free to contribute if you find any bugs write an issue on the git repos 
+## New Features
 
 - Add Feature Zoom!
 - Add Feature FlashMode
@@ -26,7 +28,7 @@ minSdkVersion 21
 You need add in **info.plist**
 
 ```dart
-  	<key>NSCameraUsageDescription</key>
+   <key>NSCameraUsageDescription</key>
     <string>Can I use the camera please?</string>
     <key>NSMicrophoneUsageDescription</key>
     <string>Can I use the mic please?</string>

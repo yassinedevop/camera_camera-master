@@ -1,8 +1,8 @@
 import 'package:camera/camera.dart';
-import 'package:camera_camera/camera_camera.dart';
-import 'package:camera_camera/src/core/camera_bloc.dart';
-import 'package:camera_camera/src/core/camera_service.dart';
-import 'package:camera_camera/src/core/camera_status.dart';
+import 'package:camera_camera_2/camera_camera_2.dart';
+import 'package:camera_camera_2/src/core/camera_bloc.dart';
+import 'package:camera_camera_2/src/core/camera_service.dart';
+import 'package:camera_camera_2/src/core/camera_status.dart';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';

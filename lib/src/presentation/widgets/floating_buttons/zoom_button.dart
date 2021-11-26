@@ -1,4 +1,4 @@
-import 'package:camera_camera/src/presentation/controller/camera_camera_controller.dart';
+import 'package:camera_camera_2/src/presentation/controller/camera_camera_controller.dart';
 import 'package:flutter/material.dart';
 
 class ZoomButton extends StatelessWidget {

@@ -2,13 +2,13 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:camera/camera.dart';
-import 'package:camera_camera/src/core/camera_bloc.dart';
-import 'package:camera_camera/src/core/camera_service.dart';
-import 'package:camera_camera/src/core/camera_status.dart';
-import 'package:camera_camera/src/presentation/controller/camera_camera_controller.dart';
-import 'package:camera_camera/src/presentation/widgets/camera_preview.dart';
-import 'package:camera_camera/src/presentation/widgets/floating_buttons/flip_camera_button.dart';
-import 'package:camera_camera/src/shared/entities/camera_side.dart';
+import 'package:camera_camera_2/src/core/camera_bloc.dart';
+import 'package:camera_camera_2/src/core/camera_service.dart';
+import 'package:camera_camera_2/src/core/camera_status.dart';
+import 'package:camera_camera_2/src/presentation/controller/camera_camera_controller.dart';
+import 'package:camera_camera_2/src/presentation/widgets/camera_preview.dart';
+import 'package:camera_camera_2/src/presentation/widgets/floating_buttons/flip_camera_button.dart';
+import 'package:camera_camera_2/src/shared/entities/camera_side.dart';
 import 'package:flutter/material.dart';
 
 class CameraCamera extends StatefulWidget {

@@ -1,5 +1,5 @@
-import 'package:camera_camera/src/presentation/controller/camera_camera_controller.dart';
-import 'package:camera_camera/src/presentation/controller/camera_camera_status.dart';
+import 'package:camera_camera_2/src/presentation/controller/camera_camera_controller.dart';
+import 'package:camera_camera_2/src/presentation/controller/camera_camera_status.dart';
 import 'package:flutter/material.dart';
 import 'floating_buttons/zoom_button.dart';
 import 'floating_buttons/capture_button.dart';

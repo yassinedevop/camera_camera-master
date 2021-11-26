@@ -1,5 +1,5 @@
 import 'package:camera/camera.dart';
-import 'package:camera_camera/src/shared/entities/camera.dart';
+import 'package:camera_camera_2/src/shared/entities/camera.dart';
 import 'package:flutter/material.dart';
 
 import 'camera_camera_status.dart';
