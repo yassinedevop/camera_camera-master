@@ -1,4 +1,5 @@
 import 'package:camera_camera_2/src/presentation/controller/camera_camera_controller.dart';
+import 'package:camera_camera_2/src/presentation/widgets/translucent_widget.dart';
 import 'package:flutter/material.dart';
 
 class CaptureButton extends StatelessWidget {
@@ -15,16 +16,16 @@ class CaptureButton extends StatelessWidget {
         alignment: Alignment.bottomCenter,
         child: Padding(
           padding: const EdgeInsets.only(bottom: 24),
-          child: InkWell(
-            onTap: () {
-              controller.takePhoto();
-            },
-            child: Container(
-              height: 80,
-              width: 80,
-              decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  border: Border.all(color: Colors.white, width: 5)),
+          child: Container(
+            height: 80,
+            width: 80,
+            decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(color: Colors.white, width: 5)),
+            child: TranslucentButton(
+              onTap: () {
+                controller.takePhoto();
+              },
               child: Container(
                 decoration: BoxDecoration(
                     shape: BoxShape.circle,

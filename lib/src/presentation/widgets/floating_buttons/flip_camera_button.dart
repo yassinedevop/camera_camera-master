@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:camera_camera_2/src/core/camera_bloc.dart';
+import 'package:camera_camera_2/src/presentation/widgets/translucent_widget.dart';
 import 'package:flutter/material.dart';
 
 class FlipCamera extends StatelessWidget {
@@ -24,11 +25,11 @@ class FlipCamera extends StatelessWidget {
             shape: BoxShape.circle,
             color: Colors.black.withOpacity(0.6),
           ),
-          child: IconButton(
-            onPressed: () {
+          child: TranslucentButton(
+            onTap: () {
               bloc.changeCamera();
             },
-            icon: Icon(
+            child: Icon(
               Platform.isAndroid
                   ? Icons.flip_camera_android
                   : Icons.flip_camera_ios,

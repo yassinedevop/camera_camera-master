@@ -1,4 +1,5 @@
 import 'package:camera_camera_2/src/presentation/controller/camera_camera_controller.dart';
+import 'package:camera_camera_2/src/presentation/widgets/translucent_widget.dart';
 import 'package:flutter/material.dart';
 
 class ZoomButton extends StatelessWidget {
@@ -16,7 +17,7 @@ class ZoomButton extends StatelessWidget {
       alignment: Alignment.bottomCenter,
       child: Padding(
         padding: const EdgeInsets.only(bottom: 10.0),
-        child: InkWell(
+        child: TranslucentButton(
           onTap: () {
             controller.zoomChange();
           },

@@ -1,4 +1,5 @@
 import 'package:camera_camera_2/src/presentation/controller/camera_camera_controller.dart';
+import 'package:camera_camera_2/src/presentation/widgets/translucent_widget.dart';
 import 'package:flutter/material.dart';
 
 class FlashButton extends StatelessWidget {
@@ -24,11 +25,11 @@ class FlashButton extends StatelessWidget {
             shape: BoxShape.circle,
             color: Colors.black.withOpacity(0.6),
           ),
-          child: IconButton(
-            onPressed: () {
+          child: TranslucentButton(
+            onTap: () {
               controller.changeFlashMode();
             },
-            icon: Icon(
+            child: Icon(
               flashIcon,
               color: Colors.white,
             ),
